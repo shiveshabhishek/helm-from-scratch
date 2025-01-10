@@ -1,5 +1,5 @@
 apiVersion: v2
-name: test-app
+name: chart3
 description: A Helm chart for Kubernetes
 maintainers:
 - name: Shivesh Abhishek

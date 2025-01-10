@@ -1,18 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Release.Name }}-nginx
+  name: {{ .Chart.Name }}-nginx
+  #namespace: {{ .Chart.Name }}-{{ .Values.namespace }}
   labels:
-    app: nginx
+    app: {{ .Values.env.name }}-nginx
+    app.kubernetes.io/instance: {{ .Chart.Name }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: nginx
+      app: {{ .Values.env.name }}-nginx
+      app.kubernetes.io/instance: {{ .Chart.Name }}
   template:
     metadata:
       labels:
-        app: nginx
+        app: {{ .Values.env.name }}-nginx
+        app.kubernetes.io/instance: {{ .Chart.Name }}
     spec:
       containers:
         - name: {{ .Chart.Name }}
@@ -28,4 +32,4 @@ spec:
       volumes:
         - name: nginx-index-file
           configMap:
-            name: {{ .Release.Name }}-index-html-configmap
+            name: {{ .Chart.Name }}-index-html-configmap
