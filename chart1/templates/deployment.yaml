@@ -6,17 +6,20 @@ metadata:
   labels:
     app: {{ .Values.env.name }}-nginx
     app.kubernetes.io/instance: {{ .Chart.Name }}
+    namespace: {{ .Release.Namespace }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       app: {{ .Values.env.name }}-nginx
       app.kubernetes.io/instance: {{ .Chart.Name }}
+      namespace: {{ .Release.Namespace }}
   template:
     metadata:
       labels:
         app: {{ .Values.env.name }}-nginx
         app.kubernetes.io/instance: {{ .Chart.Name }}
+        namespace: {{ .Release.Namespace }}
     spec:
       containers:
         - name: {{ .Chart.Name }}
