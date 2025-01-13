@@ -3,7 +3,7 @@ entries:
   chart1:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-01-10T13:27:00.436790882+05:30"
+    created: "2025-01-13T10:28:39.304036386+05:30"
     description: A Helm chart for Kubernetes
     digest: 96f454aa44cd70d87c5275e20978b4a8c40aee037905dce28eb1210ed5890cea
     maintainers:
@@ -17,7 +17,7 @@ entries:
   chart2:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-01-10T13:27:00.437815181+05:30"
+    created: "2025-01-13T10:28:39.304977388+05:30"
     description: A Helm chart for Kubernetes
     digest: ff4ffd2d42b0d633f57409457acf4dab4c1da6414b0b7bb1a709cc3c9da39d75
     maintainers:
@@ -31,7 +31,7 @@ entries:
   chart3:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-01-10T13:27:00.438802336+05:30"
+    created: "2025-01-13T10:28:39.305887222+05:30"
     description: A Helm chart for Kubernetes
     digest: 3859175f9096579349fde6ebf3cc948ca168f08ada0e45d1b3640dfd8194dc7b
     maintainers:
@@ -42,4 +42,46 @@ entries:
     urls:
     - chart3-0.1.0.tgz
     version: 0.1.0
-generated: "2025-01-10T13:27:00.435107675+05:30"
+  chart4:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-01-13T10:28:39.306915605+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 17efe2cf63af23a8728ba48bfb88b8e518e13711aff61b6aac272f77d9850234
+    maintainers:
+    - email: shankeyshivesh@gmail.com
+      name: Shivesh Abhishek
+    name: chart4
+    type: application
+    urls:
+    - chart4-0.1.0.tgz
+    version: 0.1.0
+  chart5:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-01-13T10:28:39.307865709+05:30"
+    description: A Helm chart for Kubernetes
+    digest: d8d15330f76690ce305d838e1a1ea76f7afbedc0c18c54874d58ce02b1b68600
+    maintainers:
+    - email: shankeyshivesh@gmail.com
+      name: Shivesh Abhishek
+    name: chart5
+    type: application
+    urls:
+    - chart5-0.1.0.tgz
+    version: 0.1.0
+  chart6:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-01-13T10:28:39.308937743+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 5327b043d781b2aa70deee4a56cf9cfd28bbcc51d415e684c75c81f40a7c48fd
+    maintainers:
+    - email: shankeyshivesh@gmail.com
+      name: Shivesh Abhishek
+    name: chart6
+    type: application
+    urls:
+    - chart6-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-01-13T10:28:39.302547742+05:30"
